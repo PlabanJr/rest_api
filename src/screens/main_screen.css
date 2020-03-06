@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 50px;
+  padding: 10px 40px;
+  background: #0e0e0e;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-bar {
+  display: flex;
+}
+
+.action-button {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #4a4a4a;
+  font-size: 20px;
+  background: #4a4a4a;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  border: 1px solid #ddd;
+}
+
+.action-button:focus {
+  border: 1px solid #ddd;
+}
+
+.body-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.input-bar {
+  padding: 50px;
+  flex: 1;
+  background: rgb(41, 41, 41);
+}
+
+.result-pane {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  background: #cac8c8;
+  padding: 50px;
+}
+
+.text-area,
+.input-fields {
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 20px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+  background: #737373;
+}
+
+.desc {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #026ebd;
+}
