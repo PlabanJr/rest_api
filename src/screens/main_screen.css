@@ -7,6 +7,7 @@ body {
 
 * {
   font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -145,4 +146,35 @@ pre {
 
 .logo {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 780px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .action-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .body-wrapper {
+    flex-direction: column;
+  }
+
+  .input-bar {
+    padding: 0px 20px;
+    flex: 1;
+  }
+
+  .header {
+    font-size: 35px;
+    padding: 20px 0px 10px 0px;
+  }
+
+  .action-button {
+    margin-bottom: 2px;
+  }
 }

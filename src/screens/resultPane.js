@@ -5,6 +5,16 @@ import { description } from './description';
 import './main_screen.css';
 
 class ResultPane extends Component {
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.responseData !== this.props.responseData)
+      setTimeout(
+        document
+          .getElementById('desc')
+          .scrollIntoView({ behavior: 'smooth', block: 'start' }),
+        1000
+      );
+  }
+
   getDescription = method => {
     if (method === 'ABOUT')
       return (
@@ -33,7 +43,7 @@ class ResultPane extends Component {
     return (
       <div className='result-pane'>
         <h4 style={{ marginTop: '0' }}>{currentMethod}</h4>
-        <div className='desc'>
+        <div className='desc' id='desc'>
           {this.getDescription(currentMethod)}
           {'  '}
           {currentMethod !== 'ABOUT' && (
