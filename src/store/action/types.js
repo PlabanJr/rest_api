@@ -1,0 +1,9 @@
+export const UPDATE_CURRENT_METHOD = 'UPDATE_CURRENT_METHOD';
+export const UPDATE_FORM_DATA = 'UPDATE_FORM_DATA';
+export const GET = 'GET';
+export const POST = 'POST';
+export const PUT = 'PUT';
+export const PATCH = 'PATCH';
+export const DELETE = 'DELETE';
+export const LOADING = 'LOADING';
+export const ERROR = 'ERROR';

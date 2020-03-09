@@ -5,17 +5,16 @@ body {
   height: 100%;
 }
 
-.wrapper {
-  height: 100%;
-}
-
 * {
   font-family: 'Quicksand', sans-serif;
 }
 
+.wrapper {
+  height: 100%;
+}
 .header {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   padding: 10px 40px;
   background: #0e0e0e;
   color: #fff;
@@ -41,7 +40,7 @@ body {
 }
 
 .action-button:hover {
-  border: 1px solid #ddd;
+  background: #807272;
 }
 
 .action-button:focus {
@@ -58,6 +57,7 @@ body {
   padding: 50px;
   flex: 1;
   background: rgb(41, 41, 41);
+  overflow: auto;
 }
 
 .result-pane {
@@ -66,6 +66,7 @@ body {
   flex: 1.5;
   background: #cac8c8;
   padding: 50px;
+  overflow: auto;
 }
 
 .text-area,
@@ -77,10 +78,16 @@ body {
   font-size: 15px;
   margin-bottom: 15px;
 }
+*:disabled {
+  cursor: not-allowed;
+}
 
 #form {
   display: flex;
   flex-direction: column;
+  height: 330px;
+  transition: height 1s;
+  overflow: hidden;
 }
 
 .submit-button {
@@ -91,12 +98,51 @@ body {
   background: #737373;
 }
 
+.submit-button:hover {
+  border: 1px solid #ddd;
+  background: #737373;
+}
+
 .desc {
   font-size: 18px;
   padding-bottom: 5px;
 }
 
+.read-more {
+  font-size: 14px;
+}
+
 a {
   text-decoration: none;
   color: #026ebd;
+}
+
+pre {
+  background: #ddd;
+  padding: 10px;
+  overflow: auto;
+}
+
+.notNullText,
+.error-wrapper,
+.request-wrapper {
+  transition: opacity 1s;
+}
+
+.important-text {
+  margin-top: 20px;
+  color: red;
+  opacity: 0;
+  transition: opacity 1s;
+  text-align: justify;
+  font-style: italic;
+}
+
+.notNullText {
+  height: 30px;
+  color: red;
+}
+
+.logo {
+  cursor: pointer;
 }
